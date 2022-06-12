@@ -12,9 +12,18 @@ public class Ps_01 {
 		System.out.println("The sum of three numbers is: " + sum); */
 		
 // 		Question 2: Write a program to calculate CGPG using marks of three subjects (out of 100)
-		Scanner sc = new Scanner(System.in);
+/*		Scanner sc = new Scanner(System.in);
+		System.out.println("Calculate the CGPA of 3 Subjects:");
+		float sub1 = sc.nextInt();
+		float sub2 = sc.nextInt();
+		float sub3 = sc.nextInt();
+		float cgpa = (sub1+sub2+sub3)/30;
+		System.out.print("CGPA : ");
+		System.out.format("%.2f", cgpa);		*/
+		
 /*		Question 3: Write a java program which asks the user to enter his/her name and greets them with 
 		"Hello <name>, have a good day" text */
+		
 		
 //		Question 3: Write a java program to convert kilometers to miles
 		
