@@ -1,0 +1,19 @@
+package applets;
+import java.applet.Applet;
+import java.awt.Button;
+import java.awt.GridLayout;
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public abstract class Applet6 extends Applet implements ActionListener{
+	Button b;
+	TextField tf;
+	public void init() {
+		setLayout(new GridLayout(2, 1));
+		tf = new TextField();
+		b = new Button();
+		
+	}
+
+}

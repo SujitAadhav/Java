@@ -1,0 +1,11 @@
+package Practice_Set;
+
+public class vaw_PS_01 {
+	public static void main(String[] args) {
+		int num1 = 56;
+		int num2 = 67;
+		int num3 = 89;
+		int sum = num1 + num2 + num3;
+		System.out.println(sum);
+	}
+}
