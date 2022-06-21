@@ -5,7 +5,7 @@ import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Applet7 extends Applet implements ActionListener{
+public abstract class Applet7 extends Applet implements ActionListener{
 	Button b1, b2;
 	TextField t;
 	public void init() {
@@ -23,11 +23,6 @@ public class Applet7 extends Applet implements ActionListener{
 //		b2.addActionListener((e) -> t.setText(""));
 //		b2.addActionListener((ActionEvent e) -> {t.setText("");});/
 //		b2.addActionListener(e -> t.setText(""));
-	}
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-		
 	}
 
 }

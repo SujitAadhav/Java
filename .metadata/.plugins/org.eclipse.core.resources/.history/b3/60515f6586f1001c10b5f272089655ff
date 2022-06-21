@@ -13,7 +13,7 @@ public class Applet7 extends Applet implements ActionListener{
 		add(t = new TextField(15));
 		add(b2 = new Button("Clear"));
 	
-//		b1.addActionListener(new P());
+		b1.addActionListener(new P());
 		/*b1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				t.setText("Hello");
