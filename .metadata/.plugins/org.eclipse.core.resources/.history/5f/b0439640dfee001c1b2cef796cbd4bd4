@@ -1,0 +1,61 @@
+package threads;
+
+import java.awt.Frame;
+import java.awt.TextField;
+import java.awt.FlowLayout;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowAdapter;
+
+public class ThreadDemo3 extends Frame {
+
+    tex t1, t2;
+    Thread th1, th2;
+
+    public ThreadDemo3() {
+
+        setLayout( new FlowLayout());
+
+        t1 = new tex(7);
+        t2 = new tex(7);
+
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing (WindowEvent e) {
+                System.out.println("Close");
+                System.exit(0);
+            }
+        });
+        
+        setSize(200, 200);
+        setVisible(true);
+        
+        add(t1);
+        add(t2);
+
+        th1 = new Thread(t1);
+        th2 = new Thread(t2);
+        th1.start();
+        th2.start();
+    }
+
+    public static void main(String[] args) {
+        new ThreadDemo3();
+    }
+}
+
+class tex extends TextField implements Runnable {
+
+    public tex(int i){
+        super(i);
+    }
+
+    public void run(){
+        for (int k = 0; k < 5000; k++) {
+            this.setText(Integer.toString(k));
+            if (k == 4999){
+                k = 0;
+            }
+        }
+    }
+}
+
+

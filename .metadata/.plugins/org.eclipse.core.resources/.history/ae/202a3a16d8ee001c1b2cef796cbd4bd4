@@ -1,0 +1,22 @@
+package threads;
+
+import java.awt.Frame;
+import java.awt.TextField;
+
+public class ThreadDemo3 extends Frame implements Runnable{
+	
+	TextField t1, t2;
+	Thread th1, th2;
+	int i, j;
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

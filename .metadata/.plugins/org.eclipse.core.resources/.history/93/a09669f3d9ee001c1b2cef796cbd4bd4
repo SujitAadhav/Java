@@ -1,0 +1,43 @@
+package threads;
+
+import java.awt.FlowLayout;
+import java.awt.Frame;
+import java.awt.TextField;
+import java.awt.Window;
+import java.awt.event.WindowAdapter;
+
+public class ThreadDemo3 extends Frame implements Runnable{
+	
+	TextField t1, t2;
+	Thread th1, th2;
+	int i, j;
+	
+	public ThreadDemo3() {
+		setLayout(new FlowLayout());
+		add(t1 = new TextField(15));
+		add(t2 = new TextField(15));
+		th1 = new Thread(this);
+		th1.start();
+		th2 = new Thread(this);
+		th2.start();
+		addWindowListener(new WindowAdapter() {
+			@Override
+			public void windowClosing(windowEvent e) {
+				System.exit(0);
+			}
+		});
+		setSize(300, 300);
+		setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+	
+	}
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
