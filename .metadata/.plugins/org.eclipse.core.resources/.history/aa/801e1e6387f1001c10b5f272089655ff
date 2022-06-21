@@ -19,7 +19,7 @@ public class Applet7 extends Applet implements ActionListener{
 				t.setText("Hello");
 			}
 		});*/
-		b2.addActionListener(new Q(this));
+		b2.addActionListener(new Q(This));
 //		b2.addActionListener((e) -> t.setText(""));
 //		b2.addActionListener((ActionEvent e) -> {t.setText("");});/
 //		b2.addActionListener(e -> t.setText(""));

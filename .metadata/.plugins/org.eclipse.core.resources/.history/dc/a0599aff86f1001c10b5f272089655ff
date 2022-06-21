@@ -13,13 +13,13 @@ public class Applet7 extends Applet implements ActionListener{
 		add(t = new TextField(15));
 		add(b2 = new Button("Clear"));
 	
-		b1.addActionListener(new P(this));
+//		b1.addActionListener(new P());
 		/*b1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				t.setText("Hello");
 			}
 		});*/
-		b2.addActionListener(new Q(this));
+//		b2.addActionListener(new P());
 //		b2.addActionListener((e) -> t.setText(""));
 //		b2.addActionListener((ActionEvent e) -> {t.setText("");});/
 //		b2.addActionListener(e -> t.setText(""));
@@ -40,16 +40,5 @@ class P implements ActionListener{
 	
 	public void actionPerformed(ActionEvent e) {
 		a4.t.setText("Hello World!");
-	}
-}
-
-class Q implements ActionListener{
-	Applet7 a5;
-	public Q(Applet7 o) {
-		this.a5 = o;
-	}
-	
-	public void actionPerformed(ActionEvent e) {
-		a5.t.setText("");
 	}
 }
