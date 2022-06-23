@@ -1,0 +1,10 @@
+package dataStructures;
+
+import java.awt.Button;
+
+public class ArrayDemo1 {
+	Button b[] = new Button[5];
+	public static void main(String[] args) {
+		
+	}
+}
